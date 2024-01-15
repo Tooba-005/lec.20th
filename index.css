@@ -1,0 +1,97 @@
+
+.head{
+    background-color: #e70d1e;
+}
+.phn{
+    color: white;
+}
+.truck{
+    color: white;
+}
+.one{
+    color: white;
+}
+.two{
+    color: white;
+}
+.thr{
+    color: white;
+}
+.line{
+    color: #e70d1e;
+    font-size: small;
+    font-weight: 500;
+}
+
+.card{
+    position: relative;
+    margin: 2px;
+    overflow: hidden;
+    border: none;
+}
+.card img{
+    transition: transform .5s;
+}
+.card-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255,0.4);
+    color: #e70d1e;
+    padding: 70px 60px;
+    transform: translateY(100%);
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card:hover .card-content{
+    transform: translateY(0);
+}
+.cards{
+    margin: 10px;
+}
+.card-title{
+    font-size: smaller;
+    font-weight: 600;
+}
+.sec{
+    background-color: white;
+}
+
+
+.item{
+    position: relative;
+}
+.item:hover>.tooltip{
+    opacity: 1;
+}
+.tooltip{
+    position: absolute;
+    background-color: #d0a306;
+    color: white;
+    padding: 0px 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -35%;
+    will-change: transform;
+    border-radius:3px;
+    font-size: 10px;
+    font-weight: 400;
+    opacity: 1;
+    letter-spacing: 0;
+    line-height: 1;
+    transition: all 0.3s;
+    box-shadow: 0 0 3px #0000004d;
+    display: block;
+}
+.tooltip::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    box-sizing: border-box;
+    margin-left: -3px;
+    border-width: 4px;
+    border-style: solid;
+    border-color:#d0a306 transparent transparent transparent;
+}
